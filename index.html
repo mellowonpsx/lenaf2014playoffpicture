@@ -20,8 +20,12 @@
 			.scorebox
 			{
 				width: 30px;
-				text-align: center;
+				text-align: center;				
 			}
+			input
+			{ 
+         		text-align: center; 
+         	} 
 		</style>
 	</head>
 
@@ -32,39 +36,23 @@
 			</header>
 			<nav>
 				<p>
-					<a href="/">Home</a>
+					<a href="/index2.php">Home</a>
 				</p>
 			</nav>
 
 			<div>
 				<p> DISCLAIMER: questo simulatore è un prodotto artigianale, in nessun modo collegato alla lega, i dati forniti da questo simulatore non hanno alcun valore. </p>
+				<p> FUNZIONI NON IMPLEMENTATE: Calcolo dei tiebreak del girone </p>
+				<p> FUNZIONI NON IMPLEMENTATE: Calcolo dei tiebreak delle teste di serie </p>
 			</div>
 			<div>
 				<h2> Partite: </h2>
 				<div>
-					<form id="risultati" action="elaboraRisultati.php" method="post">						
-						<div> CARDINALS <input class="scorebox" type="hidden" name="game[0][hometeam]" value="CARDINALS" readonly />
-							  		    <input class="scorebox" type="number" name="game[0][hometeam-score]" value="32" readonly />
-										<input class="scorebox" type="number" name="game[0][awayteam-score]" value="0" readonly>
-							  CRUSADERS <input class="scorebox" type="hidden" name="game[0][awayteam]" value="CRUSADERS" readonly />
-						</div>
-						<div> BLACKS <input class="scorebox" type="hidden" name="game[1][hometeam]" value="BLACKS" readonly />
-							  		    <input class="scorebox" type="number" name="game[1][hometeam-score]" value="7" readonly />
-										<input class="scorebox" type="number" name="game[1][awayteam-score]" value="2" readonly>
-							  SKORPIONS <input class="scorebox" type="hidden" name="game[1][awayteam]" value="SKORPIONS" readonly />
-						</div>
-						<!-- week 1 
-												
-						<div> CARDINALS-CRUSADERS <input class="scorebox" type="number" name="CARDINALS-CRUSADERS-HOME" value="32"> - <input class="scorebox" type="number" name="CARDINALS-CRUSADERS-AWAY" value="0"></div>
-						<div> BLACKS-SKORPIONS <input class="scorebox" type="number" name="BLACKS-SKORPIONS-HOME" value="7"> - <input class="scorebox" type="number" name="BLACKS-SKORPIONS-AWAY" value="2"></div>
-						<div> NEPTUNES-ANGELS <input class="scorebox" type="number" name="NEPTUNES-ANGELS-HOME" value="7"> - <input class="scorebox" type="number" name="NEPTUNES-ANGELS-AWAY" value="20"></div>
-						<div> REDSKINS-SAINTS <input class="scorebox" type="number" name="REDSKINS-SAINTS-HOME" value="12"> - <input class="scorebox" type="number" name="REDSKINS-SAINTS-AWAY" value="0"></div>
-						<div> MASTINI-HURRICANES <input class="scorebox" type="number" name="MASTINI-HURRICANES-HOME" value="43"> - <input class="scorebox" type="number" name="MASTINI-HURRICANES-AWAY" value="6"></div>
-						<div> ELEPHANTS-SHARKS <input class="scorebox" type="number" name="ELEPHANTS-SHARKS-HOME" value="16"> - <input class="scorebox" type="number" name="ELEPHANTS-SHARKS-AWAY" value="0"></div>
-						<div> DAEMONS-FROGS <input class="scorebox" type="number" name="DAEMONS-FROGS-HOME" value="28"> - <input class="scorebox" type="number" name="DAEMONS-FROGS-AWAY" value="15"></div>
-						<div> BARBARI-GUELFI <input class="scorebox" type="number" name="BARBARI-GUELFI-HOME" value="27"> - <input class="scorebox" type="number" name="BARBARI-GUELFI-AWAY" value="26"></div>
-						<div> HOGS-TITANS <input class="scorebox" type="number" name="HOGS-TITANS-HOME" value="0"> - <input class="scorebox" type="number" name="HOGS-TITANS-AWAY" value="0"></div>
-						-->
+					<form id="risultati" action="elaboraRisultati.php" method="post">
+						<?php
+						// file che contiene le inputbox
+						include_once("input_data.php");
+						?>									
 						<input type="submit" value="elabora i risultati" />
 					</form>
 				</div>
