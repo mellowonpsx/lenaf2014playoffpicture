@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>LENAF 2014 Playoff Picture</title>
+		<meta name="description" content="">
+		<meta name="author" content="mellowonpsx">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<style>
+			.scorebox
+			{
+				width: 30px;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>LENAF 2014 Playoff Picture</h1>
+			</header>
+			<nav>
+				<p>
+					<a href="/">Home</a>
+				</p>
+			</nav>
+
+			<div>
+				<p> DISCLAIMER: questo simulatore è un prodotto artigianale, in nessun modo collegato alla lega, i dati forniti da questo simulatore non hanno alcun valore. </p>
+			</div>
+			<div>
+				<h2> Partite: </h2>
+				<div>
+					<form id="risultati" action="elaboraRisultati.php" method="post">						
+						<div> CARDINALS <input class="scorebox" type="hidden" name="game[0][hometeam]" value="CARDINALS" readonly />
+							  		    <input class="scorebox" type="number" name="game[0][hometeam-score]" value="32" readonly />
+										<input class="scorebox" type="number" name="game[0][awayteam-score]" value="0" readonly>
+							  CRUSADERS <input class="scorebox" type="hidden" name="game[0][awayteam]" value="CRUSADERS" readonly />
+						</div>
+						<div> BLACKS <input class="scorebox" type="hidden" name="game[1][hometeam]" value="BLACKS" readonly />
+							  		    <input class="scorebox" type="number" name="game[1][hometeam-score]" value="7" readonly />
+										<input class="scorebox" type="number" name="game[1][awayteam-score]" value="2" readonly>
+							  SKORPIONS <input class="scorebox" type="hidden" name="game[1][awayteam]" value="SKORPIONS" readonly />
+						</div>
+						<!-- week 1 
+												
+						<div> CARDINALS-CRUSADERS <input class="scorebox" type="number" name="CARDINALS-CRUSADERS-HOME" value="32"> - <input class="scorebox" type="number" name="CARDINALS-CRUSADERS-AWAY" value="0"></div>
+						<div> BLACKS-SKORPIONS <input class="scorebox" type="number" name="BLACKS-SKORPIONS-HOME" value="7"> - <input class="scorebox" type="number" name="BLACKS-SKORPIONS-AWAY" value="2"></div>
+						<div> NEPTUNES-ANGELS <input class="scorebox" type="number" name="NEPTUNES-ANGELS-HOME" value="7"> - <input class="scorebox" type="number" name="NEPTUNES-ANGELS-AWAY" value="20"></div>
+						<div> REDSKINS-SAINTS <input class="scorebox" type="number" name="REDSKINS-SAINTS-HOME" value="12"> - <input class="scorebox" type="number" name="REDSKINS-SAINTS-AWAY" value="0"></div>
+						<div> MASTINI-HURRICANES <input class="scorebox" type="number" name="MASTINI-HURRICANES-HOME" value="43"> - <input class="scorebox" type="number" name="MASTINI-HURRICANES-AWAY" value="6"></div>
+						<div> ELEPHANTS-SHARKS <input class="scorebox" type="number" name="ELEPHANTS-SHARKS-HOME" value="16"> - <input class="scorebox" type="number" name="ELEPHANTS-SHARKS-AWAY" value="0"></div>
+						<div> DAEMONS-FROGS <input class="scorebox" type="number" name="DAEMONS-FROGS-HOME" value="28"> - <input class="scorebox" type="number" name="DAEMONS-FROGS-AWAY" value="15"></div>
+						<div> BARBARI-GUELFI <input class="scorebox" type="number" name="BARBARI-GUELFI-HOME" value="27"> - <input class="scorebox" type="number" name="BARBARI-GUELFI-AWAY" value="26"></div>
+						<div> HOGS-TITANS <input class="scorebox" type="number" name="HOGS-TITANS-HOME" value="0"> - <input class="scorebox" type="number" name="HOGS-TITANS-AWAY" value="0"></div>
+						-->
+						<input type="submit" value="elabora i risultati" />
+					</form>
+				</div>
+			</div>
+			<footer>
+				<p>
+					&copy; Copyright  by mellowonpsx
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
